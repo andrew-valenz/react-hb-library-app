@@ -10,8 +10,8 @@ function App() {
     <main className="container">
       <h1>Library Catalog</h1>
       <Switch>
-        <Route exact path="/" component={BookList} />
-        <Route exact path="/books/:id" component={BookDetail} />
+        <Route path="/books/:id" component={BookDetail} />
+        <Route path="/books" component={BookList} />
       </Switch>
     </main>
   );
